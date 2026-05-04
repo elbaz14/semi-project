@@ -22,6 +22,12 @@
     font-weight: bold;
     font-family: 'Georgia', serif;
     letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand-name:hover {
+    color: #d4a574;
 }
 
 .navbar-links {
@@ -30,6 +36,7 @@
     gap: 25px;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .navbar-links a {
@@ -42,4 +49,43 @@
 
 .navbar-links a:hover {
     color: #fff;
+}
+
+/* Cart Widget */
+.cart-link {
+    position: relative;
+    font-size: 1.3rem !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cart-link:hover {
+    transform: scale(1.15);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: linear-gradient(135deg, #e65100, #bf360c);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 8px rgba(230, 81, 0, 0.4);
+    animation: badgePop 0.3s ease;
+}
+
+@keyframes badgePop {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
 }

@@ -1,0 +1,94 @@
+@if (orderPlaced) {
+<div class="order-success-overlay">
+    <div class="order-success-card">
+        <span class="success-icon">✅</span>
+        <h2>Order Placed!</h2>
+        <p>Thank you for your order. Redirecting to home...</p>
+    </div>
+</div>
+} @else {
+<div class="checkout-page">
+    <h1 class="checkout-title">Checkout</h1>
+
+    @if (cart.itemCount() === 0) {
+    <div class="empty-cart">
+        <span class="empty-icon">🛒</span>
+        <h2>Your cart is empty</h2>
+        <p>Add some items from the menu to get started!</p>
+    </div>
+    } @else {
+
+    <!-- Order Summary -->
+    <section class="checkout-section">
+        <h2 class="section-title">Order Summary</h2>
+        <div class="order-items">
+            @for (item of cart.cartItems(); track item.id) {
+            <div class="order-item">
+                <div class="item-info">
+                    <span class="item-name">{{ item.name }}</span>
+                    <span class="item-category">{{ item.category }}</span>
+                </div>
+                <div class="item-controls">
+                    <button class="qty-btn" (click)="decreaseQty(item.id, item.quantity)">−</button>
+                    <span class="item-qty">{{ item.quantity }}</span>
+                    <button class="qty-btn" (click)="increaseQty(item.id, item.quantity)">+</button>
+                </div>
+                <span class="item-total">₪{{ item.price * item.quantity }}</span>
+            </div>
+            }
+        </div>
+        <div class="order-total">
+            <span>Total</span>
+            <span class="total-price">₪{{ cart.total() }}</span>
+        </div>
+    </section>
+
+    <!-- Delivery Method -->
+    <section class="checkout-section">
+        <h2 class="section-title">Delivery Method</h2>
+        <div class="option-cards">
+            <button class="option-card" [class.selected]="deliveryMethod === 'delivery'"
+                (click)="setDelivery('delivery')">
+                <span class="option-icon">🚗</span>
+                <span class="option-label">Delivery</span>
+                <span class="option-desc">To your door</span>
+            </button>
+            <button class="option-card" [class.selected]="deliveryMethod === 'pickup'"
+                (click)="setDelivery('pickup')">
+                <span class="option-icon">🏪</span>
+                <span class="option-label">Pick Up</span>
+                <span class="option-desc">Ready in 10 min</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Payment Method -->
+    <section class="checkout-section">
+        <h2 class="section-title">Payment Method</h2>
+        <div class="payment-cards">
+            <button class="payment-card" [class.selected]="paymentMethod === 'apple'"
+                (click)="setPayment('apple')">
+                <span class="payment-logo apple-pay"></span>
+                <span class="payment-label">Apple Pay</span>
+            </button>
+            <button class="payment-card" [class.selected]="paymentMethod === 'google'"
+                (click)="setPayment('google')">
+                <span class="payment-logo google-pay">G</span>
+                <span class="payment-label">Google Pay</span>
+            </button>
+            <button class="payment-card" [class.selected]="paymentMethod === 'cash'"
+                (click)="setPayment('cash')">
+                <span class="payment-logo cash-pay">💵</span>
+                <span class="payment-label">Cash</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Place Order -->
+    <button class="place-order-btn" (click)="placeOrder()">
+        Place Order — ₪{{ cart.total() }}
+    </button>
+
+    }
+</div>
+}

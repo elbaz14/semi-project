@@ -1,0 +1,103 @@
+/* Shared product page styles */
+.page-header {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.page-header h1 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 24, 16, 0.10);
+    padding: 28px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(44, 24, 16, 0.18);
+}
+
+.product-emoji {
+    font-size: 3.2rem;
+    margin-bottom: 12px;
+}
+
+.product-name {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #2c1810;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.product-desc {
+    font-family: 'Georgia', serif;
+    font-size: 0.92rem;
+    color: #7a5a48;
+    text-align: center;
+    margin-bottom: 12px;
+    min-height: 36px;
+}
+
+.product-price {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    color: #3E2723;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #5D4037, #3E2723);
+    color: #FFF8E1;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #4E342E, #2c1810);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(62, 39, 35, 0.3);
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.97);
+}
+
+.added-feedback {
+    background: linear-gradient(135deg, #2E7D32, #1B5E20) !important;
+    pointer-events: none;
+}

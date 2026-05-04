@@ -1,0 +1,358 @@
+.checkout-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    font-family: 'Georgia', serif;
+}
+
+.checkout-title {
+    color: #2c1810;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* Empty Cart */
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.empty-cart h2 {
+    color: #2c1810;
+    margin-bottom: 8px;
+}
+
+.empty-cart p {
+    color: #7a5a48;
+}
+
+/* Sections */
+.checkout-section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 16px rgba(44, 24, 16, 0.08);
+}
+
+.section-title {
+    color: #3E2723;
+    font-size: 1.1rem;
+    margin: 0 0 16px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0e6dc;
+}
+
+/* Order Items */
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5efe8;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.item-name {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.item-category {
+    color: #a08070;
+    font-size: 0.8rem;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 16px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #d4a574;
+    background: transparent;
+    color: #3E2723;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-family: 'Georgia', serif;
+}
+
+.qty-btn:hover {
+    background: #3E2723;
+    color: #fff;
+    border-color: #3E2723;
+}
+
+.item-qty {
+    font-weight: 700;
+    color: #2c1810;
+    min-width: 20px;
+    text-align: center;
+}
+
+.item-total {
+    font-weight: 700;
+    color: #3E2723;
+    font-size: 1rem;
+    min-width: 50px;
+    text-align: right;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    margin-top: 8px;
+    border-top: 2px solid #3E2723;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2c1810;
+}
+
+.total-price {
+    font-size: 1.4rem;
+    color: #3E2723;
+}
+
+/* Delivery Options */
+.option-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.option-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    border: 2px solid #e8ddd4;
+    border-radius: 14px;
+    background: #faf6f2;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: 'Georgia', serif;
+}
+
+.option-card:hover {
+    border-color: #d4a574;
+    background: #fff;
+}
+
+.option-card.selected {
+    border-color: #3E2723;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(62, 39, 35, 0.15);
+}
+
+.option-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.option-label {
+    font-weight: 700;
+    color: #2c1810;
+    font-size: 1rem;
+}
+
+.option-desc {
+    color: #7a5a48;
+    font-size: 0.82rem;
+    margin-top: 4px;
+}
+
+/* Payment Methods */
+.payment-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 10px;
+    border: 2px solid #e8ddd4;
+    border-radius: 14px;
+    background: #faf6f2;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: 'Georgia', serif;
+}
+
+.payment-card:hover {
+    border-color: #d4a574;
+    background: #fff;
+}
+
+.payment-card.selected {
+    border-color: #3E2723;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(62, 39, 35, 0.15);
+}
+
+.payment-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.apple-pay {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.apple-pay::after {
+    content: '';
+}
+
+.google-pay {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #4285F4;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4rem;
+}
+
+.cash-pay {
+    background: #E8F5E9;
+    font-size: 1.6rem;
+}
+
+.payment-label {
+    font-weight: 600;
+    color: #2c1810;
+    font-size: 0.88rem;
+}
+
+/* Place Order Button */
+.place-order-btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #5D4037, #3E2723);
+    color: #FFF8E1;
+    border: none;
+    border-radius: 16px;
+    font-family: 'Georgia', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
+}
+
+.place-order-btn:hover {
+    background: linear-gradient(135deg, #4E342E, #2c1810);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(62, 39, 35, 0.3);
+}
+
+.place-order-btn:active {
+    transform: translateY(0);
+}
+
+/* Order Success Overlay */
+.order-success-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 24, 16, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.order-success-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 48px 40px;
+    text-align: center;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+    animation: scaleIn 0.35s ease;
+}
+
+.success-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.order-success-card h2 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.order-success-card p {
+    color: #7a5a48;
+    font-family: 'Georgia', serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .payment-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .option-cards {
+        grid-template-columns: 1fr;
+    }
+}

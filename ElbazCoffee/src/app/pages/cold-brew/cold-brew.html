@@ -1,0 +1,19 @@
+<div class="page-header">
+    <h1>Cold Brew</h1>
+    <p>Slow-steeped, ice-cold, and refreshing</p>
+</div>
+
+<div class="product-grid">
+    @for (product of products; track product.name) {
+    <div class="product-card">
+        <span class="product-emoji">{{ product.emoji }}</span>
+        <span class="product-name">{{ product.name }}</span>
+        <span class="product-desc">{{ product.desc }}</span>
+        <span class="product-price">₪{{ product.price }}</span>
+        <button class="add-to-cart-btn" [class.added-feedback]="addedMap[product.name]"
+            (click)="addToCart(product.name, product.price)">
+            {{ addedMap[product.name] ? '✓ Added!' : '🛒 Add to Cart' }}
+        </button>
+    </div>
+    }
+</div>

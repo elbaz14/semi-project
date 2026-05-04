@@ -1,0 +1,15 @@
+.home-hero {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.home-hero h1 {
+    color: #2c1810;
+    margin-top: 0;
+}
+
+.home-hero p {
+    color: #5a3a28;
+    font-size: 1.1rem;
+}
