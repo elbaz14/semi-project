@@ -1,59 +1,103 @@
-# ElbazCoffee
+# ☕ LA Coffee House
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+A modern coffee shop web application built with **Angular 21**, featuring a full product menu, shopping cart, and checkout experience — designed as a Progressive Web App (PWA).
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
+
+- **Product Catalog** — Browse categories including Espresso, Cappuccino, Latte, Cold Brew, and Pastries
+- **Shopping Cart** — Add items, adjust quantities, and view a running total with a live cart badge
+- **Checkout Flow** — Choose between Delivery or Pick Up, and pay via Apple Pay, Google Pay, or Cash
+- **PWA Support** — Installable on mobile and desktop with offline capabilities via Angular Service Worker
+- **Component Architecture** — Clean, modular design using standalone Angular components
+- **Reactive State Management** — Cart powered by Angular Signals for real-time UI updates
+- **Client-Side Routing** — Smooth navigation between pages with Angular Router
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Angular 21** | Frontend framework |
+| **TypeScript 5.9** | Type-safe development |
+| **RxJS** | Reactive programming |
+| **Angular Signals** | State management |
+| **Angular Service Worker** | PWA / offline support |
+| **Vitest** | Unit testing |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── navbar/          # Top navigation bar with cart badge
+│   ├── sidenav/         # Side menu with category links
+│   ├── footer/          # Site footer
+│   ├── services/
+│   │   └── cart.service.ts   # Cart state management (Signals)
+│   └── pages/
+│       ├── home/        # Landing page with hero section
+│       ├── espresso/    # Espresso menu
+│       ├── cappuccino/  # Cappuccino menu
+│       ├── latte/       # Latte menu
+│       ├── cold-brew/   # Cold Brew menu
+│       ├── pastries/    # Pastries menu
+│       └── checkout/    # Cart review, delivery & payment
+├── assets/              # Images and static files
+├── styles.css           # Global styles
+└── index.html           # App entry point
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (v18 or later)
+- **npm** (v9 or later)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/elbaz14/semi-project.git
+
+# Navigate to the project
+cd semi-project/lacoffee
+
+# Install dependencies
+npm install
+```
+
+### Development Server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/`. The app will automatically reload on file changes.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Build for Production
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Build artifacts are stored in the `dist/` directory.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 📸 Screenshots
 
-```bash
-ng test
-```
+> Coming soon
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 📄 License
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+© 2026 LA Coffee House. All rights reserved.
