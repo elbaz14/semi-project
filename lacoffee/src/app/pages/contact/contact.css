@@ -1,0 +1,132 @@
+.contact-page {
+    padding: 40px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-page h1 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-page > p {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #d4c4b0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5D4037;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #5D4037, #3E2723);
+    color: #FFF8E1;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #4E342E, #2c1810);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(62, 39, 35, 0.3);
+}
+
+.submit-btn:disabled {
+    background: #c4b8a8;
+    color: #8a7a6a;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.success-message {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 24, 16, 0.08);
+}
+
+.success-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.success-message h2 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    background-color: #f4e8d8;
+    color: #2c1810;
+    border: 2px solid #2c1810;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #2c1810;
+    color: #fff;
+}

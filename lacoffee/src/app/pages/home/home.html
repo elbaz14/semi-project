@@ -1,6 +1,36 @@
 <div class="home-hero">
-    <h1>Welcome to Coffee House</h1>
+    <h1>Welcome to La Caffe</h1>
     <p>Experience the finest Italian blends in a classic atmosphere.</p>
+
     <img src="assets/coffeeHero.png" alt="Coffee Shop"
         style="width:100%; max-width:600px; border-radius:8px; margin-top: 20px;">
+
+    <div class="hours-section">
+        <button class="toggle-btn" (click)="toggleHours()">
+            {{ showHours ? 'Hide' : 'Show' }} Opening Hours
+        </button>
+
+        <table class="hours-table" *ngIf="showHours">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunday - Thursday</td>
+                    <td>07:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>07:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

@@ -51,7 +51,20 @@
     color: #fff;
 }
 
-/* Cart Widget */
+.navbar-links .nav-btn {
+    background-color: #d4a574;
+    color: #2c1810;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar-links .nav-btn:hover {
+    background-color: #f4e8d8;
+    color: #2c1810;
+}
+
 .cart-link {
     position: relative;
     font-size: 1.3rem !important;

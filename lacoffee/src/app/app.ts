@@ -11,5 +11,5 @@ import { Footer } from './footer/footer';
   styleUrl: './app.css'
 })
 export class App {
-  title = 'Elbaz Coffee';
+  title = 'La Caffe';
 }

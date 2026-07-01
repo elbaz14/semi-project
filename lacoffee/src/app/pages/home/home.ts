@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {}
+export class Home {
+  showHours = false;
+
+  toggleHours() {
+    this.showHours = !this.showHours;
+  }
+}

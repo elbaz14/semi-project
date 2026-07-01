@@ -12,7 +12,6 @@
     margin-bottom: 28px;
 }
 
-/* Empty Cart */
 .empty-cart {
     text-align: center;
     padding: 60px 20px;
@@ -33,7 +32,6 @@
     color: #7a5a48;
 }
 
-/* Sections */
 .checkout-section {
     background: #fff;
     border-radius: 16px;
@@ -50,7 +48,6 @@
     border-bottom: 1px solid #f0e6dc;
 }
 
-/* Order Items */
 .order-items {
     display: flex;
     flex-direction: column;
@@ -147,7 +144,6 @@
     color: #3E2723;
 }
 
-/* Delivery Options */
 .option-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -195,7 +191,6 @@
     margin-top: 4px;
 }
 
-/* Payment Methods */
 .payment-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -267,7 +262,6 @@
     font-size: 0.88rem;
 }
 
-/* Place Order Button */
 .place-order-btn {
     display: block;
     width: 100%;
@@ -294,7 +288,6 @@
     transform: translateY(0);
 }
 
-/* Order Success Overlay */
 .order-success-overlay {
     position: fixed;
     top: 0;
@@ -346,7 +339,6 @@
     to { transform: scale(1); opacity: 1; }
 }
 
-/* Responsive */
 @media (max-width: 480px) {
     .payment-cards {
         grid-template-columns: 1fr;
