@@ -7,6 +7,8 @@ import { ColdBrew } from './pages/cold-brew/cold-brew';
 import { Pastries } from './pages/pastries/pastries';
 import { Checkout } from './pages/checkout/checkout';
 import { Contact } from './pages/contact/contact';
+import { Accessibility } from './pages/accessibility/accessibility';
+import { Faq } from './pages/faq/faq';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -17,5 +19,7 @@ export const routes: Routes = [
   { path: 'pastries', component: Pastries },
   { path: 'checkout', component: Checkout },
   { path: 'contact', component: Contact },
+  { path: 'accessibility', component: Accessibility },
+  { path: 'faq', component: Faq },
   { path: '**', redirectTo: '' },
 ];

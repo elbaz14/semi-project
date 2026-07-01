@@ -1,0 +1,18 @@
+<div class="faq-page">
+    <h1>❓ Frequently Asked Questions</h1>
+    <p class="subtitle">Find answers to common questions about La Caffe</p>
+
+    <div class="faq-list">
+        <div class="faq-item" *ngFor="let faq of faqs" [class.open]="faq.open">
+            <button class="faq-question" (click)="toggle(faq)">
+                <span>{{ faq.question }}</span>
+                <span class="faq-icon">{{ faq.open ? '−' : '+' }}</span>
+            </button>
+            @if (faq.open) {
+            <div class="faq-answer">
+                <p>{{ faq.answer }}</p>
+            </div>
+            }
+        </div>
+    </div>
+</div>

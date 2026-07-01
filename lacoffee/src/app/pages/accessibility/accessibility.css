@@ -1,0 +1,66 @@
+.accessibility-page {
+    padding: 40px 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.accessibility-page h1 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.accessibility-page .subtitle {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accessibility-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 24, 16, 0.08);
+    padding: 24px 28px;
+    margin-bottom: 20px;
+}
+
+.accessibility-card h2 {
+    color: #2c1810;
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.accessibility-card p {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.accessibility-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accessibility-card ul li {
+    color: #5a3a28;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0e6d8;
+}
+
+.accessibility-card ul li:last-child {
+    border-bottom: none;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #3E2723 !important;
+}
